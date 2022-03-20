@@ -1,0 +1,13 @@
+number_of_pens = int(input("колко химикала"))
+number_of_markers = int(input("колко маркера"))
+litters_of_detergent = int(input("колко литра спрей"))
+percent_discount = int(input("колко отстъпка"))
+price_per_pens = 5.80
+price_per_markers = 7.20
+price_per_litter_detergent = 1.20
+needed_sum = number_of_pens * price_per_pens + \
+             number_of_markers * price_per_markers + \
+             litters_of_detergent * price_per_litter_detergent
+needed_sum = needed_sum - needed_sum * percent_discount / 100
+# може и така - needed_sum -= needed_sum * percent_discount /100
+print(f'Вашата обща суме е {needed_sum}.')

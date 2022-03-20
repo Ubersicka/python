@@ -1,0 +1,16 @@
+nailon = int(input("kolko nailona?"))
+pain = int(input("kolko litra boq?"))
+razreditel = int(input("kolko litra razreditel?"))
+hours = int(input("Kolko chasa e rabotil maistora?"))
+
+#moje i taka    nailon_price = 1.50
+#                pain_price = 14.50 ... i taka natatuka
+
+materials_sum = (nailon + 2) * 1.50 + \
+               pain * 1.1 * 14.50 + \
+               razreditel * 5 + \
+               0.40
+
+salary = materials_sum * 0.3 * hours
+total_sum = materials_sum + salary
+print(total_sum)

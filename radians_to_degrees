@@ -1,0 +1,11 @@
+import math
+from math import pi
+
+#Must read like input value of radian
+radians = float(input())
+#Must imput the number pi
+#Must sum the degrees
+degrees = radians * 180 / math.pi
+#Must print the value of degree
+print(degrees)
+

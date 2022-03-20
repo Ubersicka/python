@@ -1,0 +1,12 @@
+lenght = int(input())
+width = int(input())
+hight = int(input())
+percent = float(input())
+
+obem = lenght * width * hight
+obem_in_litre = obem * 0.001  #Или става и  obem / 1000
+zaeto_prostranstvo = percent / 100
+
+need_liters = obem_in_litre * (1 - zaeto_prostranstvo)
+
+print(need_liters)

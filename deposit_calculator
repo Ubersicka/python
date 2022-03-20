@@ -1,0 +1,12 @@
+deposit = float(input())
+months = int(input())
+annual_interest_percent = float(input())
+
+#Годишна лихва - виж как процента винаги се дели на 100
+annual_interest = deposit * annual_interest_percent / 100
+#Месечна лихва
+monthly_interest = annual_interest / 12
+#Резултат
+total_sum = deposit + months * monthly_interest
+
+print (f'Result is {total_sum} lv.')

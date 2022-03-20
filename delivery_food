@@ -1,0 +1,14 @@
+count_chicken_menu = int(input())
+count_fish_menu = int(input())
+count_vegeterian_menu = int(input())
+
+chicken_menu = 10.35 * count_chicken_menu
+fish_menu = 12.40 * count_fish_menu
+vegeterian_menu = 8.15 * count_vegeterian_menu
+delivery_price = 2.50
+
+total_price_menu = chicken_menu + fish_menu + vegeterian_menu
+desert = total_price_menu * 0.2
+order_price = total_price_menu + desert + delivery_price
+
+print(order_price)
